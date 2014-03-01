@@ -33,7 +33,6 @@ group :development do
   gem 'guard-minitest' # Run guard init minitest
   gem 'guard-livereload' # Run guard init livereload
   gem 'rack-livereload' # Add this live to your development.rb file config.middleware.use Rack::LiveReload
-  gem 'ruby_gntp'  # If you use Growl
 end
 group :development, :test do
   gem 'factory_girl_rails'
