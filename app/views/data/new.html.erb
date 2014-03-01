@@ -1,3 +1,56 @@
+<script>
+$(function () {
+  $("#speck_plus").click(function() {
+    $("#speck_output").html(function(i, val) {
+      return val * 1 + 1;
+    });
+  });
+
+  $("#speck_minus").click(function() {
+    alert("yo");
+    $("#speck_output").html(function(i, val) {
+      return val * 1 - 1;
+    });
+  });
+
+  $("#leak_plus").click(function() {
+    $("#leak_output").html(function(i, val) {
+      return val * 1 + 1;
+    });
+  });
+
+  $("#leak_minus").click(function() {
+    $("#leak_output").html(function(i, val) {
+      return val * 1 - 1;
+    });
+  });
+
+  $("#holes_plus").click(function() {
+    $("#holes_output").html(function(i, val) {
+      return val * 1 + 1;
+    });
+  });
+
+  $("#holes_minus").click(function() {
+    $("#holes_output").html(function(i, val) {
+      return val * 1 - 1;
+    });
+  });
+
+  $("#cracks_plus").click(function() {
+    $("#cracks_output").html(function(i, val) {
+      return val * 1 + 1;
+    });
+  });
+
+  $("#cracks_minus").click(function() {
+    $("#cracks_output").html(function(i, val) {
+      return val * 1 - 1;
+    });
+  });
+});
+</script>
+
 <h1>New datum</h1>
 
 <%= render 'form' %>

@@ -50,6 +50,6 @@ Datatracker::Application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
-config.middleware.use Rack::LiveReload
+#config.middleware.use Rack::LiveReload
 
 end
