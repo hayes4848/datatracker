@@ -13,6 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require highcharts
 //= require modules/exporting
-//= require_tree .
+
