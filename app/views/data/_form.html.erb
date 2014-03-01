@@ -1,23 +1,21 @@
 <%= simple_form_for(@datum) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <button id="speck_plus" type="button">+</button>
-    <button id="speck_minus" type="button">-</button>
-    
+  <div class="container">
     <div class="row">
-      <div class="col-md-12 col-md-push-3">
-        <%= f.input :specks do %>
-        <div id="speck_output">0</div>
-        <% end %>
+      <div class="col-md-3">
+        <button id="speck_plus" type="button">+</button>
+        <button id="speck_minus" type="button">-</button>
+      </div>
+      <div class="col-md-3">
+        <%= f.input :specks, input_html: {id: "speck_output"}  %>
       </div>
     </div>
-
+    
     <button id="leak_plus" type="button">+</button>
     <button id="leak_minus" type="button">-</button>
-    <%= f.input :light_leaks do %>
-    <div id="leak_output">0</div>
-    <% end %>
+
+    <div id="leak_output"> <%= @datum.specks %> </div>
 
     <button id="holes_plus" type="button">+</button>
     <button id="holes_minus" type="button">-</button>

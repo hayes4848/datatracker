@@ -41,7 +41,7 @@ class DataController < ApplicationController
   # POST /data.json
   def create
     @datum = Datum.new(params[:datum])
-
+    
     respond_to do |format|
       if @datum.save
         format.html { redirect_to @datum, notice: 'Datum was successfully created.' }
