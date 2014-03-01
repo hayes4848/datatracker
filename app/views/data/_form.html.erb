@@ -1,0 +1,39 @@
+<%= simple_form_for(@datum) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <button id="speck_plus" type="button">+</button>
+    <button id="speck_minus" type="button">-</button>
+    
+    <div class="row">
+      <div class="col-md-12 col-md-push-3">
+        <%= f.input :specks do %>
+        <div id="speck_output">0</div>
+        <% end %>
+      </div>
+    </div>
+
+    <button id="leak_plus" type="button">+</button>
+    <button id="leak_minus" type="button">-</button>
+    <%= f.input :light_leaks do %>
+    <div id="leak_output">0</div>
+    <% end %>
+
+    <button id="holes_plus" type="button">+</button>
+    <button id="holes_minus" type="button">-</button>
+    <%= f.input :holes do %>
+    <div id="holes_output">0</div>
+    <% end %>
+
+
+    <button id="cracks_plus" type="button">+</button>
+    <button id="cracks_minus" type="button">-</button>
+    <%= f.input :boron_cracks do %>
+    <div id="cracks_output">0</div>
+    <% end %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
