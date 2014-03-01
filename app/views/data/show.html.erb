@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Specks:</b>
+  <%= @datum.specks %>
+</p>
+
+<p>
+  <b>Light leaks:</b>
+  <%= @datum.light_leaks %>
+</p>
+
+<p>
+  <b>Holes:</b>
+  <%= @datum.holes %>
+</p>
+
+<p>
+  <b>Boron cracks:</b>
+  <%= @datum.boron_cracks %>
+</p>
+
+
+<%= link_to 'Edit', edit_datum_path(@datum) %> |
+<%= link_to 'Back', data_path %>

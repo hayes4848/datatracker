@@ -1,4 +1,7 @@
 Datatracker::Application.routes.draw do
+  resources :data
+
+
   authenticated :user do
     root :to => 'home#index'
   end
