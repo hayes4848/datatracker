@@ -3,53 +3,35 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $ ->
 	$("#speck_plus").click ->
-	
-	  $("#speck_output").html (i, val) ->
-	    val * 1 + 1
-
-	  return
+		val = $('#datum_specks').val()
+		$('#datum_specks').val(parseInt(val) + 1)
 
 	$("#speck_minus").click ->
-	  $("#speck_output").html (i, val) ->
-	    val * 1 - 1
-
-	  return
+		val = $('#datum_specks').val()
+		$('#datum_specks').val(parseInt(val) - 1)
 
 	$("#leak_plus").click ->
-	
-	 	$("#leak_output").html (i, val) ->
-	   	val * 1 + 1
-
-	  return
+		val = $('#datum_light_leaks').val()
+		$('#datum_light_leaks').val(parseInt(val) + 1)
 
 	$("#leak_minus").click ->
-	  $("#leak_output").html (i, val) ->
-	    val * 1 - 1
-
-	  return
+		val = $('#datum_light_leaks').val()
+		$('#datum_light_leaks').val(parseInt(val) - 1)	
 
 	$("#holes_plus").click ->
-	
-	 	$("#holes_output").html (i, val) ->
-	   	val * 1 + 1
-
-	  return
+		val = $('#datum_holes').val()
+		$('#datum_holes').val(parseInt(val) + 1)
 
 	$("#holes_minus").click ->
-	  $("#holes_output").html (i, val) ->
-	    val * 1 - 1
-
-	  return
+		val = $('#datum_holes').val()
+		$('#datum_holes').val(parseInt(val) - 1)
 
 	$("#cracks_plus").click ->
-		
-		$("#cracks_output").html (i, val) ->
-		  val * 1 + 1
-
-		return
+		val = $('#datum_boron_cracks').val()
+		$('#datum_boron_cracks').val(parseInt(val) + 1)
 
 	$("#cracks_minus").click ->
-		$("#cracks_output").html (i, val) ->
-		  val * 1 - 1
+		val = $('#datum_boron_cracks').val()
+		$('#datum_boron_cracks').val(parseInt(val) - 1)		
 
-		return
+
