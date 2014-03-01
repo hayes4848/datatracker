@@ -1,0 +1,29 @@
+development:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: datatracker_development
+  pool:     5
+  username: your_username
+  password: your_password
+  template: template0
+
+  test:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: datatracker_test
+  pool:     5
+  username: your_username
+  password: your_password
+  template: template0
+
+production:
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  database: datatracker_production
+  pool:     5
+  username: your_username
+  password: your_password
+  template: template0
