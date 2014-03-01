@@ -2,10 +2,10 @@
 
 <table>
   <tr>
-    <th>Specks</th>
-    <th>Light leaks</th>
-    <th>Holes</th>
-    <th>Boron cracks</th>
+    <th><%= t(:Specks) %></th>
+    <th><%= t(:Light_Leaks) %></th>
+    <th><%= t(:Holes) %></th>
+    <th><%= t(:Boron_Holes) %></th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,9 +17,9 @@
     <td><%= datum.light_leaks %></td>
     <td><%= datum.holes %></td>
     <td><%= datum.boron_cracks %></td>
-    <td><%= link_to 'Show', datum %></td>
-    <td><%= link_to 'Edit', edit_datum_path(datum) %></td>
-    <td><%= link_to 'Destroy', datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to '<%= t(:lt_show) %>', datum %></td>
+    <td><%= link_to '<%= t(:lt_edit) %>', edit_datum_path(datum) %></td>
+    <td><%= link_to '<%= t(:lt_destroy) %>', datum, method: :delete, data: { confirm: '<%= t(:confirm) %>' } %></td>
   </tr>
 <% end %>
 </table>

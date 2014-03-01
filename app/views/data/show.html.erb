@@ -1,25 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Specks:</b>
+  <b><%= t(:Specks) %>:</b>
   <%= @datum.specks %>
 </p>
 
 <p>
-  <b>Light leaks:</b>
+  <b><%= t(:Light_Leaks) %>:</b>
   <%= @datum.light_leaks %>
 </p>
 
 <p>
-  <b>Holes:</b>
+  <b><%= t(:Holes) %>:</b>
   <%= @datum.holes %>
 </p>
 
 <p>
-  <b>Boron cracks:</b>
+  <b><%= t(:Boron_Holes) %>:</b>
   <%= @datum.boron_cracks %>
 </p>
 
 
-<%= link_to 'Edit', edit_datum_path(@datum) %> |
-<%= link_to 'Back', data_path %>
+<%= link_to '<%= t(:lt_edit) %>', edit_datum_path(@datum) %> |
+<%= link_to '<%= t(:lt_back) %>', data_path %>
