@@ -11,20 +11,20 @@ $(function () {
             },
             xAxis: {
                 categories: [
-                    '<%= t(:abv_day_mon) %>',
-                    '<%= t(:abv_day_tue) %>',
-                    '<%= t(:abv_day_wed) %>',
-                    '<%= t(:abv_day_thurs) %>',
-                    '<%= t(:abv_day_fri) %>',
+                    'Mon',
+                    'Tue',
+                    'Wed',
+                    'Thurs',
+                    'Fri',
                    
-                    '<%= t(:last_week_total) %>',
+                    'Last Week Summary',
                     
                ]
             },
             yAxis: {
                 min: 0,
                 title: {
-                    text: '<%= t(:Quantity) %>'
+                    text: 'Quantity'
                 }
             },
             tooltip: {
@@ -41,18 +41,18 @@ $(function () {
                 }
             },
             series: [{
-                name: '<%= t(:Specks) %>',
+                name: 'Specks',
                 data: [<%= Datum.specks_data %>]
             }, {
-                name: '<%= t(:Light_Leaks) %>',
+                name: 'Light Leaks',
                 data: [<%= Datum.light_leaks_data %>]
     
             }, {
-                name: '<%= t(:Holes) %>',
+                name: 'Holes',
                 data: [<%= Datum.holes_data %>]
     
             }, {
-                name: '<%= t(:Boron_Cracks) %>',
+                name: 'Boron Cracks',
                 data: [<%= Datum.boron_cracks_data %>]
     
             }]

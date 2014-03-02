@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.1.0'
 gem 'rails', '3.2.17'
+gem "i18n"
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 2.3.2.2'
 gem 'cancan'
@@ -10,6 +11,8 @@ gem 'pg'
 gem 'rolify'
 gem 'simple_form'
 gem 'thin'
+gem 'gon'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
